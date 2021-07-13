@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="content_recycler_padding_top">10dp</dimen>
+    <dimen name="content_recycler_padding_bottom">5dp</dimen>
+    <dimen name="content_recycler_padding_left">10dp</dimen>
+    <dimen name="content_recycler_padding_right">10dp</dimen>
+
+    <dimen name="recycler_margin_top">10dp</dimen>
+    <dimen name="recycler_margin_bottom">10dp</dimen>
+    <dimen name="frame_dissappear_height">20dp</dimen>
+
+    <dimen name="message_info_recyclerview_padding_top">20dp</dimen>
+    <dimen name="message_info_recyclerview_text_size">18sp</dimen>
+
+    <dimen name="rotate_loading_width">50dp</dimen>
+    <dimen name="rotate_loading_heigth">50dp</dimen>
+
+    <dimen name="rotate_recycler_view_loading_width">20dp</dimen>
+    <dimen name="rotate_recycler_view_loading_heigth">20dp</dimen>
+
+</resources>

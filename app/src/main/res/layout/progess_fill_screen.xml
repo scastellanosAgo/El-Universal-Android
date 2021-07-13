@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_progress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:clickable="true"
+    android:focusable="true">
+
+    <com.victor.loading.rotate.RotateLoading
+        android:id="@+id/rl_progress"
+        android:layout_width="@dimen/rotate_loading_width"
+        android:layout_height="@dimen/rotate_loading_heigth"
+        android:layout_centerInParent="true"
+        app:loading_speed="11"
+        app:loading_width="5dp" />
+</RelativeLayout>

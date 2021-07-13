@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/ll_content_message"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_warning"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_info"/>
+            <androidx.percentlayout.widget.PercentRelativeLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:paddingTop="@dimen/message_info_recyclerview_padding_top"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    app:layout_widthPercent="70%"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/message_info_recyclerview_text_size"
+                    android:text="No existen elementos asignados a esta opción"/>
+            </androidx.percentlayout.widget.PercentRelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingTop="@dimen/content_recycler_padding_top"
+        android:paddingBottom="@dimen/content_recycler_padding_bottom"
+        android:paddingRight="@dimen/content_recycler_padding_right"
+        android:paddingLeft="@dimen/content_recycler_padding_left"
+        android:id="@+id/fl_content_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_above="@+id/fl_bottom"
+            android:layout_marginBottom="@dimen/recycler_margin_bottom"
+            android:id="@+id/rv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutAnimation="@anim/layout_animation" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/fl_bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.victor.loading.rotate.RotateLoading
+                android:id="@+id/rl_progress_bottom"
+                android:layout_width="@dimen/rotate_loading_heigth"
+                android:layout_height="@dimen/rotate_loading_heigth"
+                android:layout_centerInParent="true"
+                app:loading_speed="11"
+                app:loading_width="5dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

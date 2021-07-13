@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Prueba Universal</string>
+    <string name="error_on_response">Error al recibir o convertir respuesta del servicio</string>
+    <string name="error_on_request">Error al enviar la peticion</string>
+    <string name="title_universal">El Universal</string>
+    <string name="title_menu_share">Compartir</string>
+</resources>
